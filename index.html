@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explorando addEventListener</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>🎉 Explorando <code>addEventListener</code></h1>
+    <p>
+      Em JavaScript, o método <code>addEventListener</code> permite escutar eventos, como cliques, teclas e movimentos.
+      Ele nos dá controle total para tornar páginas mais interativas e dinâmicas.
+    </p>
+
+    <section class="code-box">
+      <h2>🧪 Exemplo básico:</h2>
+      <pre><code>
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  alert("Clique detectado!");
+});
+      </code></pre>
+    </section>
+
+    <button id="btn">Interaja comigo!</button>
+
+    <div id="infoBox" class="hidden">
+      😄 Você descobriu uma mensagem secreta!
+    </div>
+
+    <p id="clickCount">Cliques: 0</p>
+  </main>
+
+  <audio id="som" src="click.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
